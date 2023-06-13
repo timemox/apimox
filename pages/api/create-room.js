@@ -2,7 +2,7 @@
 
 import { MongoClient, ServerApiVersion } from 'mongodb';
 
-const uri = 'mongodb+srv://glucoso:Xdcjt33Fvc7jwShP@mox.l1obwjz.mongodb.net/<dbname>?retryWrites=true&w=majority';
+const uri = process.env.MONGODB_URI;
 
 const client = new MongoClient(uri, {
   serverApi: {
